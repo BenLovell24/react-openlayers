@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import olModify from 'ol/interaction/modify';
+import VectorSource from 'ol/source/vector';
 
 import { InteractionType } from '.';
 import { MapContext, MapContextType } from '../map';
@@ -32,6 +33,7 @@ export class Modify extends React.Component<ModifyProps> {
     condition: undefined,
     deleteCondition: undefined,
     pixelTolerance: undefined,
+    source: new VectorSource(),
     style: undefined,
     features: undefined,
     wrapX: undefined
