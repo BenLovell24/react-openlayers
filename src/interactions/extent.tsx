@@ -6,7 +6,7 @@ import { InteractionType } from '.';
 import { MapContext, MapContextType } from '../map';
 import Util, { ReactOpenlayersEvent, ReactOpenlayersEvents } from '../util';
 
-export type ExtentOptions = olFix.olx.interaction.ExtentOptions;
+export type ExtentOptions = ol.olx.interaction.ExtentOptions;
 export interface ExtentProps extends ExtentOptions, InteractionType<olExtent> {
   onEvent?: ReactOpenlayersEvent
   onChange?: ReactOpenlayersEvent
